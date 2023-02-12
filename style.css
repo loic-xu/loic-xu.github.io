@@ -22,10 +22,15 @@ nav a:hover {
 
 
 body{
-    background-color:rgb(221, 193, 166);
+    background-color: #282c34;
     order: 1;
 }
 
 p{
     font-size: 20px;
+    color: white;
+}
+
+li a{
+    color:skyblue;
 }
