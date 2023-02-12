@@ -1,0 +1,36 @@
+h1{
+    color:tomato;
+}
+
+/* Barre de navigation */
+nav{
+    height: auto;
+    font-size: 25px;
+    background-color:dimgray;
+}
+
+/* Pour séparer les différents liens*/
+nav a{
+    background-color: dimgray;
+    color:black;
+}
+
+/* Pour mettre en valeur la section qu'on va rediriger vers lorsqu'on met la souris dessus*/
+nav a:hover {
+    background-color: #ddd;
+}
+
+
+body{
+    background-color: #282c34;
+    order: 1;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+li a{
+    color:skyblue;
+}
