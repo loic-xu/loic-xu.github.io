@@ -1,9 +1,14 @@
 h1{
     color:tomato;
 }
+h2{
+    color:white;
+}
+
 
 /* Barre de navigation */
 nav{
+    padding: 2px;
     height: auto;
     font-size: 25px;
     background-color:dimgray;
@@ -31,6 +36,20 @@ p{
     color: white;
 }
 
+li{
+    color:white;
+    font-size: 20px;
+}
 li a{
     color:skyblue;
+}
+
+#ensiie a {
+    padding: 2px; 
+    color:skyblue;
+}
+
+
+#ensiie:hover::after {
+    content: " (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise)";
 }
