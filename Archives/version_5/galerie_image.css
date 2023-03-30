@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before{
+box-sizing: border-box;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+input[type="radio"]{
+    position:absolute;
+    left:-100vw;
+}
+
+label{
+    cursor:pointer;
+}
+
+.slideshow{
+    display: grid;
+    grid-template: "slider" 1fr;
+    place-items: center;
+    overflow: hidden;
+    max-width: 400px;
+    aspect-ratio:2/2;
+    margin:2rem auto;
+}
+  	
+.slideshow> * {
+    grid-area: slider;
+}	
+	
+.slideshow  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+    
+.slideshow  ul  li{
+    flex: 0 0 100%;
+    transition: transform .25s;
+    will-change: transform
+}
+	
+.slideshow  ul  li	img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+#slide_img1:checked ~  ul > li{transform:translatex(0%)}  
+#slide_img2:checked ~  ul > li{transform: translatex(-100%)}  
+#slide_img3:checked ~  ul > li{transform: translatex(-200%)}
+#slide_img4:checked ~  ul > li {transform: translatex(-300%)}
+    
+/* Flèches */
+.precedent{	
+    z-index:1;
+    place-self: center left;	
+}
+
+.suivant{	
+    z-index:1;
+    place-self: center right;
+}
+	
+
+
+.slideshow > .precedent > label,
+.slideshow > .suivant > label{
+    display: none;
+    background-color:hsl(0,0%,15%);
+    justify-content: center;
+    align-content: center;
+}   
+        
+.slideshow > .precedent > label:after{content:'←'}
+.slideshow > .suivant > label:after{content:'→'}
+    
+.slideshow > .precedent > label:after,
+.slideshow > .suivant > label:after{
+    display: flex;
+    align-items: center;
+    font-size:2rem;
+    font-size:clamp(1rem, 2vw, 2rem);
+    color:hsl(0, 0%, 100%);
+}   
+    
+
+#slide_img1:checked ~ .precedent > label.img4,
+#slide_img1:checked ~ .suivant > label.img2,
+#slide_img2:checked ~ .precedent > label.img1,
+#slide_img2:checked ~ .suivant > label.img3,
+#slide_img3:checked ~ .precedent > label.img2,
+#slide_img3:checked ~ .suivant > label.img4,
+#slide_img4:checked ~ .precedent > label.img3,
+#slide_img4:checked ~ .suivant > label.img1{
+	
+display:flex;
+width:2rem;
+height:2rem;
+width:clamp(2rem, 8vw, 4rem);
+height:clamp(2rem, 8vw, 4rem);
+	
+	}
+
+
+
+/***************************navigation puces bas********************************/
+.puces {
+z-index: 1;
+display: flex;
+gap: 1rem;
+padding: 1rem;
+place-self: end center;
+	
+	}
+    
+.puces label{
+	
+background-color: white;
+border-radius: 50%;
+width: 1rem;
+height: 1rem;
+	
+	}
+/********************simulation lien actif sur les puces******************************/
+
+	
+#slide_img1:checked ~ .puces > label.img1> .actif_puces,
+#slide_img2:checked ~ .puces > label.img2 > .actif_puces,
+#slide_img3:checked ~ .puces > label.img3 > .actif_puces,
+#slide_img4:checked ~ .puces > label.img4 > .actif_puces{
+	
+border-radius: inherit;	
+display: flex;
+height: inherit;
+width: inherit;
+background-color: black;
+	
+	}
+
+/********************************navigation puces bas****************************/

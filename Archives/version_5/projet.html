@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galerie_image.css">
+    <title>Projets</title>
+</head>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="projet.html">Projets</a>
+    <a href="perso.html">Perso</a>
+    <a href="evolution.html">Évolution</a> 
+</nav>
+
+<body>
+    
+    <h1>Projets</h1>
+    <hr>
+    <h2>Web</h2>
+    <p>
+        Mon premier projet en développement Web est ce site.
+        <br> <br>
+        Code source : <a href="https://github.com/loic-xu/loic-xu.github.io" target="_blank">Github</a>
+        <br>
+        <i>
+            Technologies utilisées : <strong>HTML, CSS, PHP</strong> (cf version 3)
+        </i>
+    </p>
+    <hr>
+    <h2>Académique</h2>
+    <p>
+        Projet lié au cours de programmation impérative durant mon premier semestre à l'ENSIIE : 
+        Implémentation d'un interpréteur pour un petit langage graphique 
+        <br> <br>
+        L’interpréteur lit sur l’entrée standard un fichier qui a sur sa première ligne un entier 
+        représentant la taille de l’image à produire ainsi qu’en deuxième ligne une suite 
+        de caractères dont certains représentent des actions à faire. Ces actions permettront
+         en sortie d’avoir une image au format PPM. Voici quelques exemples :
+        <a href="media\projet_c\1.ipi" target="_blank">Code image 1</a> 
+        <a href="media\projet_c\2.ipi" target="_blank">Code image 2</a> 
+        <a href="media\projet_c\3.ipi" target="_blank">Code image 3</a> 
+        <a href="media\projet_c\4.ipi" target="_blank">Code image 4</a> 
+
+        <!-- GALERIE IMAGE -->
+        <div class=slideshow>
+
+            <input name="slideshow" id=slide_img1 type="radio" checked>
+            <input name="slideshow" id=slide_img2 type="radio">
+            <input name="slideshow" id=slide_img3 type="radio">
+            <input name="slideshow" id=slide_img4 type="radio"> 
+            
+            <ul>
+            <li class=img1>
+            <img src="media\projet_c\1.png" alt>
+            </li>
+        
+            <li class=img2>
+            <img src="media\projet_c\2.png" alt>
+            </li>
+        
+            <li class=img3>
+            <img src="media\projet_c\3.png" alt>
+            </li>
+        
+            <li class=img4>
+            <img src="media\projet_c\4.png" alt>
+            </li>
+            </ul>
+            
+            <div class=precedent>
+            <label class=img1 for=slide_img1></label>
+            <label class=img2 for=slide_img2></label>
+            <label class=img3 for=slide_img3></label>
+            <label class=img4 for=slide_img4></label>
+            </div>
+            
+            <div class=suivant>
+            <label class=img1 for=slide_img1></label>
+            <label class=img2 for=slide_img2></label>
+            <label class=img3 for=slide_img3></label>
+            <label class=img4 for=slide_img4></label>
+            </div>
+            
+            <div class=puces>
+                <label class="img1" for=slide_img1>
+                <span class=actif_puces></span>
+                </label>
+                <label class="img2" for=slide_img2>
+                <span class=actif_puces></span>
+                </label>
+                <label class="img3" for=slide_img3>
+                <span class=actif_puces></span>
+                </label>	
+                <label class="img4" for=slide_img4>
+                <span class=actif_puces></span>
+                </label>
+            </div>
+        </div>
+        <!-- FIN GALERIE IMAGE -->
+    </p>
+    <p>
+        Code source (avec énoncé du projet et mon rapport) : <a href="https://github.com/loic-xu/projet_programmation_imperative" target="_blank">Github</a>
+        <br>
+        <i>
+            Technologie utilisée : <strong>C</strong>
+        </i>
+    </p>
+</body>
+</html>
