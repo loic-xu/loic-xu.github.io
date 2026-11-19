@@ -4,8 +4,8 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-loic--xu-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/loic-xu/)
 [![GitHub](https://img.shields.io/badge/GitHub-loic--xu-181717?style=flat&logo=github&logoColor=white)](https://github.com/loic-xu)
 
-Portfolio technique et vitrine professionnelle de **Loïc Xu**, Data & AI Engineer.  
-Ingénieur diplômé de l'**ENSIIE** (spécialisation Data / IA) et titulaire d'un **Master 2 Data Science à l'Université Paris-Saclay**.
+Bienvenue sur mon portfolio technique !  
+Je suis **Loïc Xu**, Data & AI Engineer — ingénieur diplômé de l'**ENSIIE** (spécialisation Data / IA) et titulaire d'un **Master 2 Data Science à l'Université Paris-Saclay**.
 
 🔗 **Accéder au site : [loic-xu.github.io](https://loic-xu.github.io)**
 
