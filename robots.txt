@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loic-xu.github.io/sitemap.xml
+
