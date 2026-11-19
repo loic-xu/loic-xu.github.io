@@ -1,37 +1,235 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mon premier site</title>
+    <title>Loïc Xu — Data & AI Engineer</title>
+    <meta name="description"
+        content="Portfolio de Loïc Xu, Data & AI Engineer. Diplômé ENSIIE & Master 2 Data Science Paris-Saclay.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        code,
+        pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
 </head>
 
+<body class="min-h-screen flex flex-col antialiased selection:bg-slate-700 selection:text-white">
 
+    <!-- Minimalist Navigation Header -->
+    <header class="border-b border-slate-800/80 bg-[#0d1117]/90 sticky top-0 z-30 backdrop-blur-sm">
+        <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-semibold text-slate-100 hover:text-white transition-colors">
+                Loïc Xu
+            </a>
+            <nav class="flex items-center gap-5 text-sm">
+                <a href="index.html" class="text-white font-medium">Accueil</a>
+                <a href="projets.html" class="text-slate-400 hover:text-slate-200 transition-colors">Projets</a>
+                <a href="cv.html" class="text-slate-400 hover:text-slate-200 transition-colors">CV</a>
+                <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer"
+                    class="text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1">
+                    <span>GitHub</span>
+                    <span class="text-xs text-slate-500">↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer"
+                    class="text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1">
+                    <span>LinkedIn</span>
+                    <span class="text-xs text-slate-500">↗</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="projet.html">Projets</a>
-    <a href="perso.html">Perso</a>
-    <a href="evolution.html">Évolution</a> 
-</nav>
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-grow space-y-12">
 
-<body>
+        <!-- Intro -->
+        <section class="space-y-4">
+            <div class="space-y-1">
+                <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Loïc Xu</h1>
+                <p class="text-base text-slate-400 font-mono">Data & AI Engineer</p>
+            </div>
 
-    <h1>Bienvenue sur mon site web !</h1>
+            <p class="text-slate-300 leading-relaxed">
+                Ingénieur diplômé de l'<strong>ENSIIE</strong> (spécialisation Data / IA) et titulaire d'un
+                <strong>Master 2 Data Science à l'Université Paris-Saclay</strong>, je résous deux défis majeurs :
+                optimiser et fiabiliser des pipelines de données massives, et concevoir des applications d'IA (RAG,
+                architectures LLM) robustes, évaluées et prêtes pour la production.
+            </p>
 
-    <p>Je débute mon aventure de programmation web et je vais donc tenter de faire un site web. Je publierai au fur et à mesure l'évolution de ce site dans l'onglet "Évolution".</p>
-    
-    <p>
-        Liens vers le site transilien pour les horaires en temps réel :
-        <ul>
-            <li><a href="https://www.transilien.com/fr/horaires/prochains-departs/?departure=Paris+Gare+du+Nord&uicDeparture=8727103&prm=false&uicArrival=8768138&arrival=%C3%89vry+-+Courcouronnes">Paris Gare du Nord vers Évry-Courcouronnes</a></li>
-            <br>
-            <li><a href="https://www.transilien.com/fr/horaires/prochains-departs/?departure=%C3%89vry+-+Courcouronnes&uicDeparture=8768138&prm=false&uicArrival=8727103&arrival=Paris+Gare+du+Nord">Évry-Courcouronnes vers Paris Gare du Nord</a></li>
-        </ul>
+            <p class="text-slate-300 leading-relaxed">
+                Mon parcours s'est forgé à travers des environnements variés : en <strong>start-up</strong> (Prorizon
+                AI), dans le <strong>secteur public</strong> (ANSSI) et au sein d'un <strong>grand groupe
+                    international</strong> (Sanofi). Cette diversité d'expériences m'a appris à allier agilité, rigueur
+                méthodologique et passage à l'échelle industrielle.
+            </p>
+        </section>
 
-    </p>
+        <!-- Dernières Expériences -->
+        <section class="space-y-4 pt-6 border-t border-slate-800/80">
+            <div class="flex items-center justify-between">
+                <h2 class="text-lg font-semibold text-white">Expériences professionnelles</h2>
+                <a href="cv.html" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
+                    Consulter le CV complet →
+                </a>
+            </div>
+
+            <div class="space-y-3">
+                <div
+                    class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                    <div>
+                        <div class="font-semibold text-white text-sm">Stage — Data & AI Engineer • Sanofi</div>
+                        <p class="text-xs text-slate-400 mt-0.5">Pipeline d'ingestion & génération de données
+                            structurées (GEO, JSON-LD Schema sur 30+ sites), Quality Gate hybride (déterministe + LLM),
+                            observabilité Datadog/AWS S3.</p>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Fév. 2026 –
+                        Juil. 2026</span>
+                </div>
+
+                <div
+                    class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                    <div>
+                        <div class="font-semibold text-white text-sm">Stage — AI Engineer • ANSSI</div>
+                        <p class="text-xs text-slate-400 mt-0.5">Étude, prototypage technique et benchmarks de
+                            performance autour de technologies d'IA.</p>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Avr. 2025 –
+                        Sept. 2025</span>
+                </div>
+
+                <div
+                    class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                    <div>
+                        <div class="font-semibold text-white text-sm">Stage — Data & ML Engineer • Prorizon AI</div>
+                        <p class="text-xs text-slate-400 mt-0.5">Modernisation de pipelines data (20M+ lignes) via
+                            Polars et SQL (temps /6), standards CI/CD et Clean Code.</p>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Avr. 2024 –
+                        Sept. 2024</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets Clés -->
+        <section class="space-y-4 pt-6 border-t border-slate-800/80">
+            <div class="flex items-center justify-between">
+                <h2 class="text-lg font-semibold text-white">Projets phares</h2>
+                <a href="projets.html" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
+                    Voir les projets →
+                </a>
+            </div>
+
+            <div class="space-y-4">
+                <!-- RailTrack -->
+                <a href="projets.html#railtrack"
+                    class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
+                    <div class="flex items-baseline justify-between gap-2">
+                        <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                            RailTrack — Transit Lakehouse & Analytics
+                        </h3>
+                        <span class="text-xs font-mono text-slate-400 shrink-0">Data Engineering</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+                        Architecture médaillon (Bronze/Silver/Gold) ingérant les flux temps réel d'IDFM via traitement
+                        vectorisé (DuckDB, Polars, Parquet ZSTD) et Data Contracts (Pydantic).
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
+                        <span>DuckDB</span> • <span>Polars</span> • <span>dbt</span> • <span>Airflow</span> •
+                        <span>Docker</span>
+                    </div>
+                </a>
+
+                <!-- Assistant RAG -->
+                <a href="projets.html#rag"
+                    class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
+                    <div class="flex items-baseline justify-between gap-2">
+                        <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                            Assistant Intelligent de Recherche Documentaire
+                        </h3>
+                        <span class="text-xs font-mono text-slate-400 shrink-0">GenAI & RAG</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+                        Pipeline RAG de production avec indexation vectorielle Weaviate, recherche hybride (BM25 +
+                        Dense), réordonnancement (HyDE, Reranking) et évaluation via Ragas.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
+                        <span>Python</span> • <span>LangChain</span> • <span>Weaviate</span> • <span>Ragas</span>
+                    </div>
+                </a>
+
+                <!-- BabyStats -->
+                <a href="projets.html#babystats"
+                    class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
+                        <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                            BabyStats — Suivi & Analytics de Tournois
+                        </h3>
+                        <div class="flex items-center gap-2 shrink-0 text-xs font-mono">
+                            <span class="text-slate-400">Data Engineering & Web</span>
+                            <span class="text-slate-600">•</span>
+                            <span class="text-emerald-400 flex items-center gap-1 font-medium">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                <span>En ligne ↗</span>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+                        Plateforme Jamstack d'analytics des tournois officiels FFBF : architecture médaillon, empreinte
+                        web réduite de 2,7 Go à &lt; 250 Mo et moteur de Face-à-Face en direct.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
+                        <span>Architecture Médaillon</span> • <span>Jamstack</span> • <span>Playwright</span> •
+                        <span>babystats.pages.dev</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact & Réseaux -->
+        <section class="space-y-3 pt-6 border-t border-slate-800/80">
+            <h2 class="text-lg font-semibold text-white">Contact & Réseaux</h2>
+            <p class="text-sm text-slate-400 leading-relaxed">
+                Disponible pour échanger autour d'opportunités à Paris en Data Engineering et Intelligence Artificielle
+                :
+            </p>
+            <div class="flex items-center gap-4 pt-1 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer"
+                    class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+                    <span>LinkedIn (loic-xu)</span>
+                    <span class="text-xs">↗</span>
+                </a>
+                <span class="text-slate-700">•</span>
+                <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer"
+                    class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+                    <span>GitHub (@loic-xu)</span>
+                    <span class="text-xs">↗</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="border-t border-slate-800/60 py-6 text-center text-xs text-slate-400 font-mono">
+        <div class="max-w-3xl mx-auto px-6">
+            Loïc Xu • Data & AI Engineer • Paris
+        </div>
+    </footer>
+
 </body>
-
 
 </html>

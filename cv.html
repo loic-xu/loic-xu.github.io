@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Loïc Xu | Data & AI Engineer</title>
+    <meta name="description" content="CV de Loïc Xu, Data & AI Engineer. Expériences chez Sanofi, ANSSI, Prorizon AI. Diplômé ENSIIE & Master 2 Data Science Paris-Saclay.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-slate-700 selection:text-white">
+
+    <!-- Minimalist Navigation Header -->
+    <header class="border-b border-slate-800/80 bg-[#0d1117]/90 sticky top-0 z-30 backdrop-blur-sm">
+        <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-semibold text-slate-100 hover:text-white transition-colors">
+                Loïc Xu
+            </a>
+            <nav class="flex items-center gap-5 text-sm">
+                <a href="index.html" class="text-slate-400 hover:text-slate-200 transition-colors">Accueil</a>
+                <a href="projets.html" class="text-slate-400 hover:text-slate-200 transition-colors">Projets</a>
+                <a href="cv.html" class="text-white font-medium">CV</a>
+                <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1">
+                    <span>GitHub</span>
+                    <span class="text-xs text-slate-500">↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1">
+                    <span>LinkedIn</span>
+                    <span class="text-xs text-slate-500">↗</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-grow space-y-12">
+
+        <!-- Page Header -->
+        <section>
+            <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">CV</h1>
+        </section>
+
+        <!-- Expériences Professionnelles -->
+        <section class="space-y-6 pt-6 border-t border-slate-800/80">
+            <h2 class="text-lg font-semibold text-white">Expériences professionnelles</h2>
+
+            <div class="space-y-8">
+                <!-- Sanofi -->
+                <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40 space-y-3">
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                        <div>
+                            <h3 class="font-bold text-white text-base">Stage — Data & AI Engineer</h3>
+                            <div class="text-sm text-cyan-400 font-medium">Sanofi <span class="text-slate-500">• Paris, France</span></div>
+                        </div>
+                        <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">Fév. 2026 – Juil. 2026</span>
+                    </div>
+
+                    <p class="text-xs text-slate-400 italic">
+                        Contexte : Répondre aux nouveaux standards de visibilité par les moteurs de recherche génératifs (GEO) tout en respectant les exigences réglementaires strictes de l'industrie pharmaceutique.
+                    </p>
+
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-300 space-y-2 pl-1 leading-relaxed">
+                        <li>
+                            <strong class="text-white">Pipeline de données structurées :</strong> Automatisation d’un pipeline d’ingestion et de génération de données structurées (<strong class="text-white">GEO / Generative Engine Optimization, JSON-LD Schema</strong>) sur 30+ sites réglementés.
+                        </li>
+                        <li>
+                            <strong class="text-white">Quality Gate hybride :</strong> Conception d'un système de validation à deux niveaux (<strong class="text-white">règles déterministes + LLM + validateurs de schémas</strong>) garantissant zéro dérive ou hallucination sur les données critiques en production.
+                        </li>
+                        <li>
+                            <strong class="text-white">Évaluation continue :</strong> Mise en place d’un pipeline d’évaluation automatisé (<strong class="text-white">Golden Dataset, LLM-as-a-Judge</strong>) assurant la non-régression des flux lors des mises à jour de prompts ou de modèles.
+                        </li>
+                        <li>
+                            <strong class="text-white">Observabilité & Télémétrie :</strong> Déploiement du suivi Data/IA sur <strong class="text-white">AWS S3 et Datadog</strong> (contrôle continu des latences p95, détection d'anomalies, coûts et erreurs).
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ANSSI -->
+                <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40 space-y-3">
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                        <div>
+                            <h3 class="font-bold text-white text-base">Stage — AI Engineer</h3>
+                            <div class="text-sm text-cyan-400 font-medium">
+                                ANSSI <span class="text-slate-400 text-xs font-normal">(Agence Nationale de la Sécurité des Systèmes d'Information)</span> <span class="text-slate-500">• Paris, France</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">Avr. 2025 – Sept. 2025</span>
+                    </div>
+
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-300 space-y-1.5 pl-1 leading-relaxed">
+                        <li>
+                            <strong class="text-white">Prototypage technique :</strong> Étude et expérimentations autour de solutions d'intelligence artificielle appliquées.
+                        </li>
+                        <li>
+                            <strong class="text-white">Benchmarks & Évaluation :</strong> Réalisation d'évaluations comparatives de performances techniques (latence, consommation de ressources).
+                        </li>
+                        <li>
+                            <strong class="text-white">Restitution technique :</strong> Synthèse des résultats et présentation des enjeux d'architecture aux équipes.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Prorizon AI -->
+                <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40 space-y-3">
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                        <div>
+                            <h3 class="font-bold text-white text-base">Stage — Data & ML Engineer</h3>
+                            <div class="text-sm text-cyan-400 font-medium">Prorizon AI <span class="text-slate-500">• Paris, France</span></div>
+                        </div>
+                        <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">Avr. 2024 – Sept. 2024</span>
+                    </div>
+
+                    <p class="text-xs text-slate-400 italic">
+                        Contexte : Passer de notebooks exploratoires volumineux à des pipelines de données industriels capables de traiter des volumes massifs sans crash mémoire.
+                    </p>
+
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-300 space-y-2 pl-1 leading-relaxed">
+                        <li>
+                            <strong class="text-white">Modernisation de pipelines volumineux (20M+ lignes) :</strong> Migration de Pandas vers <strong class="text-white">Polars</strong> et réécriture de requêtes SQL analytiques. Résultat : <strong class="text-white">temps d’exécution divisé par 6</strong> et fin des erreurs de saturation mémoire (OOM).
+                        </li>
+                        <li>
+                            <strong class="text-white">Industrialisation logicielle :</strong> Refactorisation complète des notebooks legacy en modules Python structurés, testables et maintenables.
+                        </li>
+                        <li>
+                            <strong class="text-white">Standards de production :</strong> Mise en place de suites de tests (<strong class="text-white">Pytest</strong>), de pipelines CI/CD et des principes de Clean Code sur l’ensemble du codebase.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formation -->
+        <section class="space-y-4 pt-6 border-t border-slate-800/80">
+            <h2 class="text-lg font-semibold text-white">Formation</h2>
+            
+            <div class="space-y-3">
+                <!-- ENSIIE -->
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">ENSIIE <span class="text-slate-400 text-xs font-normal">(École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise)</span></h3>
+                        <p class="text-xs text-slate-300 mt-0.5">Diplôme d’ingénieur — Spécialisation Data / IA</p>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Sept. 2022 – Sept. 2026</span>
+                </div>
+
+                <!-- Paris-Saclay -->
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-semibold text-white text-sm">Université Paris-Saclay</h3>
+                        <p class="text-xs text-slate-300 mt-0.5">Master 2 Data Science</p>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Sept. 2024 – Sept. 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences Techniques -->
+        <section class="space-y-4 pt-6 border-t border-slate-800/80">
+            <h2 class="text-lg font-semibold text-white">Compétences techniques</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
+                
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 space-y-1.5">
+                    <span class="font-mono text-xs text-slate-400 uppercase tracking-wider">Langages</span>
+                    <p class="text-slate-200 font-medium">Python, SQL</p>
+                </div>
+
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 space-y-1.5">
+                    <span class="font-mono text-xs text-slate-400 uppercase tracking-wider">Data Engineering</span>
+                    <p class="text-slate-200 font-medium">DuckDB, Polars, dbt, Apache Airflow, Parquet, Pydantic, PostgreSQL</p>
+                </div>
+
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 space-y-1.5">
+                    <span class="font-mono text-xs text-slate-400 uppercase tracking-wider">Cloud, Infra & IA</span>
+                    <p class="text-slate-200 font-medium">AWS, Docker, Datadog, FastAPI, Weaviate, LangChain, PyTorch</p>
+                </div>
+
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 space-y-1.5">
+                    <span class="font-mono text-xs text-slate-400 uppercase tracking-wider">DevOps & Qualité</span>
+                    <p class="text-slate-200 font-medium">Git, CI/CD (GitHub Actions), Pytest, Mypy, Ruff, SonarQube, uv</p>
+                </div>
+
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/30 space-y-1.5 sm:col-span-2">
+                    <span class="font-mono text-xs text-slate-400 uppercase tracking-wider">Langues</span>
+                    <p class="text-slate-200 font-medium">Français (natif), Anglais (C1)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Réseaux -->
+        <section class="space-y-3 pt-6 border-t border-slate-800/80">
+            <h2 class="text-lg font-semibold text-white">Contact & Réseaux</h2>
+            <div class="flex items-center gap-4 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+                    <span>LinkedIn (loic-xu)</span>
+                    <span class="text-xs">↗</span>
+                </a>
+                <span class="text-slate-700">•</span>
+                <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+                    <span>GitHub (@loic-xu)</span>
+                    <span class="text-xs">↗</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="border-t border-slate-800/60 py-6 text-center text-xs text-slate-400 font-mono">
+        <div class="max-w-3xl mx-auto px-6">
+            Loïc Xu • Data & AI Engineer • Paris
+        </div>
+    </footer>
+
+</body>
+</html>

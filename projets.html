@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Loïc Xu</title>
+    <meta name="description"
+        content="Projets techniques et réalisations de Loïc Xu, Data & AI Engineer : RailTrack, Assistant RAG Weaviate, BabyStats, SimCLR, Job Tracker.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        code,
+        pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col antialiased selection:bg-slate-700 selection:text-white">
+
+    <!-- Minimalist Navigation Header -->
+    <header class="border-b border-slate-800/80 bg-[#0d1117]/90 sticky top-0 z-30 backdrop-blur-sm">
+        <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-semibold text-slate-100 hover:text-white transition-colors">
+                Loïc Xu
+            </a>
+            <nav class="flex items-center gap-5 text-sm">
+                <a href="index.html" class="text-slate-400 hover:text-slate-200 transition-colors">Accueil</a>
+                <a href="projets.html" class="text-white font-medium">Projets</a>
+                <a href="cv.html" class="text-slate-400 hover:text-slate-200 transition-colors">CV</a>
+                <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer"
+                    class="text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1">
+                    <span>GitHub</span>
+                    <span class="text-xs text-slate-500">↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer"
+                    class="text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1">
+                    <span>LinkedIn</span>
+                    <span class="text-xs text-slate-500">↗</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-grow space-y-12">
+
+        <!-- Page Header & Sommaire -->
+        <section class="space-y-4">
+            <div class="space-y-1">
+                <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Projets</h1>
+                <p class="text-sm text-slate-400">
+                    Sélection de réalisations techniques de la conception à la mise en production.
+                </p>
+            </div>
+
+            <!-- Sommaire / Accès rapide -->
+            <div class="flex flex-wrap gap-2 pt-1">
+                <a href="#railtrack"
+                    class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-400 hover:border-slate-700 hover:bg-slate-900 transition-all flex items-center gap-1.5 shadow-sm">
+                    <span class="text-slate-500">#</span>
+                    <span>RailTrack</span>
+                    <span class="text-slate-500">• Data</span>
+                </a>
+                <a href="#rag"
+                    class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-400 hover:border-slate-700 hover:bg-slate-900 transition-all flex items-center gap-1.5 shadow-sm">
+                    <span class="text-slate-500">#</span>
+                    <span>Assistant RAG</span>
+                    <span class="text-slate-500">• GenAI</span>
+                </a>
+                <a href="#babystats"
+                    class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-400 hover:border-slate-700 hover:bg-slate-900 transition-all flex items-center gap-1.5 shadow-sm">
+                    <span class="text-slate-500">#</span>
+                    <span>BabyStats</span>
+                    <span class="text-slate-500">• Data & Web</span>
+                    <span class="text-slate-700">•</span>
+                    <span class="text-emerald-400 flex items-center gap-1 font-medium">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>En ligne</span>
+                    </span>
+                </a>
+                <a href="#jobtracker"
+                    class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-400 hover:border-slate-700 hover:bg-slate-900 transition-all flex items-center gap-1.5 shadow-sm">
+                    <span class="text-slate-500">#</span>
+                    <span>Job Tracker</span>
+                    <span class="text-slate-500">• Software</span>
+                </a>
+                <a href="#simclr"
+                    class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-mono text-slate-300 hover:text-cyan-400 hover:border-slate-700 hover:bg-slate-900 transition-all flex items-center gap-1.5 shadow-sm">
+                    <span class="text-slate-500">#</span>
+                    <span>Simpsons SimCLR</span>
+                    <span class="text-slate-500">• Computer Vision</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects List -->
+        <div class="space-y-12">
+
+            <!-- PROJET 1 : RAILTRACK -->
+            <article id="railtrack" class="space-y-4 pt-6 border-t border-slate-800/80">
+                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">
+                            RailTrack — Transit Lakehouse & Analytics
+                        </h2>
+                        <a href="https://github.com/loic-xu/rail-track" target="_blank" rel="noopener noreferrer"
+                            class="text-xs font-mono text-cyan-400 hover:text-cyan-300 inline-block mt-1">
+                            [GitHub ↗]
+                        </a>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">Data
+                        Engineering</span>
+                </div>
+
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl space-y-1">
+                        <span class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Le constat
+                            & Pourquoi je l'ai fait :</span>
+                        <p class="text-slate-400 text-xs sm:text-sm">
+                            L'ensemble des 5 lignes du RER francilien (A, B, C, D et E) concentre plus de 3,4 millions
+                            de trajets par jour. Les statistiques officielles mensuelles agrègent les indicateurs et
+                            masquent la ponctualité réelle arrêt par arrêt. J'ai conçu cette plateforme pour capter les
+                            flux temps réel complexes SIRI-Lite / PRIM d'IDFM et modéliser l'effet domino de la
+                            propagation des retards à chaque quai.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1 text-xs sm:text-sm">
+                        <span class="font-semibold text-white">Architecture & Réalisations techniques :</span>
+                        <ul class="list-disc list-inside space-y-1.5 text-slate-400 pl-1">
+                            <li><strong class="text-slate-300">Architecture Lakehouse Médaillon :</strong> Ingestion des
+                                flux temps réel IDFM (SIRI-Lite) avec découplage strict : validation du contrat de
+                                données en &lt; 2 ms via <code class="text-slate-300">Pydantic</code> (Control Plane) et
+                                aplatissement vectorisé C++ direct en Parquet ZSTD via <code
+                                    class="text-slate-300">DuckDB</code> et <code class="text-slate-300">Polars</code>
+                                (Data Plane).</li>
+                            <li><strong class="text-slate-300">Modélisation dimensionnelle dbt (Kimball) :</strong>
+                                Schéma en étoile complet (<code class="text-slate-300">fact_train_punctuality</code>
+                                entourée de dimensions conformes) et déduplication temporelle SQL au dernier état connu
+                                pour modéliser le parcours complet de chaque mission.</li>
+                            <li><strong class="text-slate-300">Orchestration Airflow & Compaction nocturne :</strong>
+                                Pipeline déclenché toutes les 15 min sous Docker avec DAG de compaction nocturne
+                                quotidienne (02:00 UTC) résolvant le <em>Small Files Problem</em> (réduction 84:1 en
+                                Parquet ZSTD, zéro amplification d'écriture).</li>
+                            <li><strong class="text-slate-300">Quality Gate & Dashboard analytique :</strong> Suite
+                                complète d'assertions dbt (<code class="text-slate-300">schema.yml</code>), typage
+                                strict (<code class="text-slate-300">mypy</code>, <code
+                                    class="text-slate-300">ruff</code>, <code class="text-slate-300">pytest</code>) et
+                                restitution décisionnelle interactive sous <code
+                                    class="text-slate-300">Streamlit</code>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Aperçu Réel du Dashboard -->
+                    <div class="pt-1">
+                        <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/60 cursor-pointer"
+                            onclick="openLightbox('assets/images/railtrack_preview.png', 'RailTrack — Dashboard Analytique Temps Réel')">
+                            <img src="assets/images/railtrack_preview.png" alt="Aperçu Dashboard RailTrack"
+                                class="w-full h-auto max-h-80 sm:max-h-96 object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-[1.01] transition-all duration-300">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-3">
+                                <span
+                                    class="text-xs font-mono text-cyan-300 bg-slate-900/90 px-2.5 py-1 rounded-md border border-slate-700 flex items-center gap-1.5 shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                                    </svg>
+                                    <span>Cliquer pour agrandir</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-1 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Python</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">DuckDB</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Polars</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">dbt (Kimball)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Apache Airflow</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Streamlit</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Docker</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJET 2 : ASSISTANT RECHERCHE DOCUMENTAIRE -->
+            <article id="rag" class="space-y-4 pt-6 border-t border-slate-800/80">
+                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">
+                            Assistant Intelligent de Recherche Documentaire
+                        </h2>
+                        <a href="https://github.com/loic-xu/RAG" target="_blank" rel="noopener noreferrer"
+                            class="text-xs font-mono text-cyan-400 hover:text-cyan-300 inline-block mt-1">
+                            [GitHub ↗]
+                        </a>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">GenAI & Vector
+                        Search</span>
+                </div>
+
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl space-y-1">
+                        <span class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Le constat
+                            & Pourquoi je l'ai fait :</span>
+                        <p class="text-slate-400 text-xs sm:text-sm">
+                            Permettre une recherche sémantique ultra-précise et contextuelle au sein de corpus
+                            documentaires hétérogènes (PDFs techniques, rapports), sans hallucination et avec une
+                            traçabilité totale des sources exploitées.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1 text-xs sm:text-sm">
+                        <span class="font-semibold text-white">Architecture & Réalisations techniques :</span>
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 pl-1">
+                            <li><strong class="text-slate-300">Pipeline RAG de production :</strong> Extraction
+                                automatisée de texte (PDF/Regex), indexation vectorielle sous <code
+                                    class="text-slate-300">Weaviate</code> et recherche hybride combinant recherche par
+                                mot-clé (<code class="text-slate-300">BM25</code>) et représentations denses (<code
+                                    class="text-slate-300">Dense Retrieval</code>).</li>
+                            <li><strong class="text-slate-300">Optimisation du Retrieval :</strong> Implémentation des
+                                stratégies <code class="text-slate-300">Small2Big</code>, expansion de requêtes <code
+                                    class="text-slate-300">HyDE</code> et réordonnancement par cross-encoder (<code
+                                    class="text-slate-300">Reranking</code>).</li>
+                            <li><strong class="text-slate-300">Évaluation rigoureuse :</strong> Mesure automatisée de la
+                                fidélité et de la pertinence des réponses générées avec le framework <code
+                                    class="text-slate-300">Ragas</code>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-1 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Python</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">LangChain</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Weaviate</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Hybrid Search</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Ragas</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJET 3 : BABYSTATS -->
+            <article id="babystats" class="space-y-4 pt-6 border-t border-slate-800/80">
+                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">
+                            BabyStats — Suivi & Analytics de Tournois
+                        </h2>
+                        <a href="https://babystats.pages.dev/" target="_blank" rel="noopener noreferrer"
+                            class="text-xs font-mono text-cyan-400 hover:text-cyan-300 inline-block mt-1">
+                            [babystats.pages.dev ↗]
+                        </a>
+                    </div>
+                    <div class="flex sm:flex-col items-center sm:items-end gap-2 sm:gap-1 shrink-0 sm:pt-0.5">
+                        <span class="text-xs font-mono text-slate-400 whitespace-nowrap">Data Engineering & Web</span>
+                        <span
+                            class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span>En ligne</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl space-y-1">
+                        <span class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Le constat
+                            & Pourquoi je l'ai fait :</span>
+                        <p class="text-slate-400 text-xs sm:text-sm">
+                            Passionné de baby-foot, j'étais freiné par des sites officiels sans analytics : impossible
+                            de voir les confrontations directes ou l'historique des matchs. J'ai créé BabyStats pour
+                            indexer tous les tournois et rendre ces statistiques simples à explorer.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1 text-xs sm:text-sm">
+                        <span class="font-semibold text-white">Architecture & Réalisations techniques :</span>
+                        <ul class="list-disc list-inside space-y-1.5 text-slate-400 pl-1">
+                            <li><strong class="text-slate-300">Architecture Médaillon (Bronze ➔ Silver ➔ Gold)
+                                    :</strong> Pipeline de données complet avec ingestion <code
+                                    class="text-slate-300">Bronze</code> (dumps bruts compressés Gzip), nettoyage <code
+                                    class="text-slate-300">Silver</code> (résolution d'équipes et podiums avec ex æquo),
+                                et génération <code class="text-slate-300">Gold</code> de fiches joueurs ultra-légères
+                                (~20 Ko chargées à la demande) et d'un annuaire global (~3 Mo).</li>
+                            <li><strong class="text-slate-300">Optimisation d'empreinte majeure :</strong> Réduction
+                                drastique de l'empreinte web passée de <strong class="text-white">2,7 Go en v1 à moins
+                                    de 250 Mo</strong> grâce au partitionnement statique, permettant un chargement
+                                instantané et un coût d'infrastructure nul (0 €).</li>
+                            <li><strong class="text-slate-300">Enrichissement des confrontations & Face-à-Face
+                                    :</strong> Croisement des matchs avec l'API Tablesoccer (1800+ classements officiels
+                                FFBF) et moteur de recherche direct permettant d'isoler l'historique et les statistiques
+                                face à un adversaire précis.</li>
+                            <li><strong class="text-slate-300">Déploiement Jamstack en production :</strong> Application
+                                responsive avec recherche instantanée, système de favoris (<code
+                                    class="text-slate-300">localStorage</code>) et thèmes sombre/clair, accessible
+                                publiquement sur <a href="https://babystats.pages.dev/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-cyan-400 underline underline-offset-2">babystats.pages.dev</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-1 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Architecture
+                            Médaillon</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Jamstack</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Playwright</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Node.js</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Cloudflare Pages</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJET 4 : JOB TRACKER -->
+            <article id="jobtracker" class="space-y-4 pt-6 border-t border-slate-800/80">
+                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">
+                            Job Tracker — Extension Chrome
+                        </h2>
+                        <a href="https://github.com/loic-xu/job-tracker" target="_blank" rel="noopener noreferrer"
+                            class="text-xs font-mono text-cyan-400 hover:text-cyan-300 inline-block mt-1">
+                            [GitHub ↗]
+                        </a>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">Software
+                        Engineering</span>
+                </div>
+
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl space-y-1">
+                        <span class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Le constat
+                            & Pourquoi je l'ai fait :</span>
+                        <p class="text-slate-400 text-xs sm:text-sm">
+                            Remplir un tableur Excel pour chaque candidature est vite fastidieux, surtout pour
+                            copier-coller et retrouver les liens des offres. J'ai conçu Job Tracker pour conserver
+                            toutes mes données en local tout en simplifiant le suivi : l'extension Chrome capture l'URL
+                            en un clic et centralise l'accès direct à chaque annonce.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1 text-xs sm:text-sm">
+                        <span class="font-semibold text-white">Architecture & Réalisations techniques :</span>
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 pl-1">
+                            <li><strong class="text-slate-300">Extension Chrome Manifest V3 :</strong> Popup ergonomique
+                                qui détecte l'onglet actif, capture l'URL de l'annonce et envoie la candidature en local
+                                sans changer de fenêtre.</li>
+                            <li><strong class="text-slate-300">Backend FastAPI & Pydantic v2 :</strong> Validation
+                                stricte des schémas de données, gestion du cycle de statut des candidatures et
+                                documentation Swagger interactive.</li>
+                            <li><strong class="text-slate-300">Stockage local-first & Repository Pattern :</strong>
+                                Persistance sécurisée dans un fichier CSV local compatible Excel, garantissant zéro
+                                fuite
+                                de données et accès direct aux liens.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Aperçu Réel de l'Extension & Table -->
+                    <div class="pt-1">
+                        <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/60 cursor-pointer"
+                            onclick="openJobTrackerLightbox()">
+                            <img src="assets/images/jobtracker_form.png" alt="Aperçu Job Tracker"
+                                class="w-full h-auto max-h-80 sm:max-h-96 object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-[1.01] transition-all duration-300">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-3">
+                                <span
+                                    class="text-xs font-mono text-cyan-300 bg-slate-900/90 px-2.5 py-1 rounded-md border border-slate-700 flex items-center gap-1.5 shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                                    </svg>
+                                    <span>Cliquer pour agrandir</span>
+                                </span>
+                                <span
+                                    class="text-xs font-mono text-slate-300 bg-slate-900/90 px-2.5 py-1 rounded-md border border-slate-700 shadow-md">
+                                    2 captures ↗
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-1 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">FastAPI</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Chrome MV3</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Pydantic v2</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Local-First</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJET 5 : SIMCLR VS CNN -->
+            <article id="simclr" class="space-y-4 pt-6 border-t border-slate-800/80">
+                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">
+                            Classification Simpsons — SimCLR vs CNN
+                        </h2>
+                        <a href="https://github.com/loic-xu/simpson-classification-simCLR" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-xs font-mono text-cyan-400 hover:text-cyan-300 inline-block mt-1">
+                            [GitHub ↗]
+                        </a>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-1">Deep Learning /
+                        Computer Vision</span>
+                </div>
+
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl space-y-1">
+                        <span class="text-xs font-semibold text-slate-200 uppercase tracking-wider font-mono">Le constat
+                            & Pourquoi je l'ai fait :</span>
+                        <p class="text-slate-400 text-xs sm:text-sm">
+                            Collecter des images brutes ne coûte rien, mais les annoter coûte très cher. Avec seulement
+                            50 images labellisées par classe sur 19 personnages des Simpsons, un CNN classique
+                            surapprend et plafonne à <strong class="text-white">33,1 % d'accuracy</strong>. En
+                            exploitant la masse d'images non annotées via SimCLR en PyTorch, l'apprentissage contrastif
+                            permet de bondir à <strong class="text-white">46,5 % d'accuracy (+40 % de gain
+                                relatif)</strong> sans aucun label supplémentaire.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1 text-xs sm:text-sm">
+                        <span class="font-semibold text-white">Architecture & Réalisations techniques :</span>
+                        <ul class="list-disc list-inside space-y-1.5 text-slate-400 pl-1">
+                            <li><strong class="text-slate-300">Pipeline de données & Configuration Pydantic :</strong>
+                                Filtrage et équilibrage strict du dataset Kaggle (19 classes à 300 images/classe),
+                                gestion typée de la configuration via <strong class="text-white">Pydantic</strong> et
+                                découpage automatisé train (70 %) / test (20 %) / validation (10 %).</li>
+                            <li><strong class="text-slate-300">Paires de vues stochastiques :</strong> Génération à la
+                                volée de vues augmentées par recadrage aléatoire (<code
+                                    class="text-slate-300">RandomResizedCrop</code> à 128×128), retournements
+                                horizontaux et normalisation pour imposer l'invariance spatiale.</li>
+                            <li><strong class="text-slate-300">Backbone CNN & Tête de projection :</strong> Conception
+                                d'un encodeur convolutif à 3 blocs (<code class="text-slate-300">BatchNorm</code>, <code
+                                    class="text-slate-300">Dropout 0.3</code>, <code
+                                    class="text-slate-300">AdaptiveAvgPool2d</code>) couplé à une tête de projection
+                                non-linéaire MLP (projection en dimension 64) pour isoler les représentations
+                                sémantiques.</li>
+                            <li><strong class="text-slate-300">Perte Contrastive NT-Xent :</strong> Implémentation
+                                matricielle vectorisée de la perte <strong class="text-white">NT-Xent</strong> (<code
+                                    class="text-slate-300">temperature = 0.5</code>) maximisant la similarité cosinus
+                                des paires positives tout en repoussant les vues négatives au sein du batch.</li>
+                            <li><strong class="text-slate-300">Linear Probing & Résultats chiffrés :</strong>
+                                Entraînement d'un classifieur linéaire sur les représentations latentes pré-entraînées.
+                                Résultat : l'accuracy monte à <strong class="text-white">46,5 % (+13,4 points / +40 % de
+                                    gain relatif)</strong> face au CNN supervisé standard, à budget de labels
+                                rigoureusement identique.</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-1 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">PyTorch</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">SimCLR</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Apprentissage
+                            Contrastif</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Computer Vision</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">Pydantic</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="border-t border-slate-800/60 py-6 text-center text-xs text-slate-400 font-mono">
+        <div class="max-w-3xl mx-auto px-6">
+            Loïc Xu • Data & AI Engineer • Paris
+        </div>
+    </footer>
+
+    <!-- Fullscreen Image Lightbox Modal with Multi-Image Support -->
+    <div id="imageLightbox"
+        class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
+        onclick="closeLightbox()">
+        <div class="relative max-w-5xl max-h-full flex flex-col items-center cursor-default w-full"
+            onclick="event.stopPropagation()">
+            
+            <div class="relative flex items-center justify-center w-full">
+                <!-- Lightbox Bouton Précédent -->
+                <button id="lightboxPrevBtn" type="button" onclick="lightboxPrev()" aria-label="Image précédente"
+                    class="hidden absolute left-2 sm:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-cyan-400 items-center justify-center shadow-2xl transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <!-- Image Principale Lightbox -->
+                <img id="lightboxImg" src="" alt="Aperçu agrandi"
+                    class="rounded-xl border border-slate-700 max-h-[80vh] w-auto shadow-2xl object-contain transition-all duration-200">
+
+                <!-- Lightbox Bouton Suivant -->
+                <button id="lightboxNextBtn" type="button" onclick="lightboxNext()" aria-label="Image suivante"
+                    class="hidden absolute right-2 sm:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-cyan-400 items-center justify-center shadow-2xl transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Barre d'infos & Légende -->
+            <div class="mt-3 flex flex-col sm:flex-row items-center justify-between w-full text-xs font-mono text-slate-400 px-2 gap-2">
+                <div class="flex items-center gap-2 truncate max-w-lg">
+                    <span id="lightboxIndexTag"
+                        class="hidden text-cyan-400 bg-slate-900 border border-slate-800 px-2 py-0.5 rounded font-bold">1 / 2</span>
+                    <span id="lightboxCaption" class="truncate text-slate-300"></span>
+                </div>
+                <div class="flex items-center gap-4 shrink-0">
+                    <a id="lightboxLink" href="" target="_blank" rel="noopener noreferrer"
+                        class="text-cyan-400 hover:text-cyan-300 underline underline-offset-2 flex items-center gap-1">
+                        <span>Ouvrir l'image originale</span>
+                        <span>↗</span>
+                    </a>
+                    <button onclick="closeLightbox()"
+                        class="text-slate-400 hover:text-white transition-colors bg-slate-900 border border-slate-700 px-2.5 py-1 rounded-md">
+                        Fermer (Échap)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Données du carrousel Job Tracker (défilement disponible dans le Lightbox)
+        const jobTrackerSlides = [
+            {
+                src: 'assets/images/jobtracker_form.png',
+                caption: 'Job Tracker — Formulaire d\'ajout rapide (Extension Chrome Manifest V3)'
+            },
+            {
+                src: 'assets/images/jobtracker_list.png',
+                caption: 'Job Tracker — Tableau de bord & Suivi des candidatures (FastAPI & CSV local)'
+            }
+        ];
+
+        function openJobTrackerLightbox(index = 0) {
+            openLightboxGallery(jobTrackerSlides, index);
+        }
+
+        // Système Lightbox Général (Solo ou Multi-images)
+        let currentGallery = [];
+        let currentGalleryIndex = 0;
+
+        function renderLightboxSlide() {
+            if (!currentGallery.length) return;
+            const item = currentGallery[currentGalleryIndex];
+            document.getElementById('lightboxImg').src = item.src;
+            document.getElementById('lightboxCaption').textContent = item.caption;
+            document.getElementById('lightboxLink').href = item.src;
+
+            const prevBtn = document.getElementById('lightboxPrevBtn');
+            const nextBtn = document.getElementById('lightboxNextBtn');
+            const indexTag = document.getElementById('lightboxIndexTag');
+
+            if (currentGallery.length > 1) {
+                prevBtn.classList.remove('hidden');
+                prevBtn.classList.add('flex');
+                nextBtn.classList.remove('hidden');
+                nextBtn.classList.add('flex');
+                indexTag.classList.remove('hidden');
+                indexTag.textContent = `${currentGalleryIndex + 1} / ${currentGallery.length}`;
+            } else {
+                prevBtn.classList.add('hidden');
+                prevBtn.classList.remove('flex');
+                nextBtn.classList.add('hidden');
+                nextBtn.classList.remove('flex');
+                indexTag.classList.add('hidden');
+            }
+        }
+
+        function openLightboxGallery(items, initialIndex = 0) {
+            currentGallery = items;
+            currentGalleryIndex = initialIndex;
+            renderLightboxSlide();
+            document.getElementById('imageLightbox').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function openLightbox(src, caption) {
+            openLightboxGallery([{ src: src, caption: caption }], 0);
+        }
+
+        function lightboxPrev() {
+            if (currentGallery.length <= 1) return;
+            currentGalleryIndex = (currentGalleryIndex - 1 + currentGallery.length) % currentGallery.length;
+            renderLightboxSlide();
+        }
+
+        function lightboxNext() {
+            if (currentGallery.length <= 1) return;
+            currentGalleryIndex = (currentGalleryIndex + 1) % currentGallery.length;
+            renderLightboxSlide();
+        }
+
+        function closeLightbox() {
+            document.getElementById('imageLightbox').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+            currentGallery = [];
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('imageLightbox');
+            if (modal.classList.contains('hidden')) return;
+
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                lightboxPrev();
+            } else if (e.key === 'ArrowRight') {
+                lightboxNext();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
