@@ -15,14 +15,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://loic-xu.github.io/">
     <meta property="og:title" content="Loïc Xu — Data & AI Engineer">
-    <meta property="og:description" content="Portfolio technique de Loïc Xu, Data & AI Engineer. Diplômé ENSIIE & Master 2 Data Science Paris-Saclay. Réalisations en Data Engineering (DuckDB, Polars, dbt) et GenAI (RAG, Weaviate).">
+    <meta property="og:description"
+        content="Portfolio technique de Loïc Xu, Data & AI Engineer. Diplômé ENSIIE & Master 2 Data Science Paris-Saclay. Réalisations en Data Engineering (DuckDB, Polars, dbt) et GenAI (RAG, Weaviate).">
     <meta property="og:image" content="https://loic-xu.github.io/assets/images/og-preview.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://loic-xu.github.io/">
     <meta name="twitter:title" content="Loïc Xu — Data & AI Engineer">
-    <meta name="twitter:description" content="Portfolio technique de Loïc Xu, Data & AI Engineer. Diplômé ENSIIE & Master 2 Data Science Paris-Saclay.">
+    <meta name="twitter:description"
+        content="Portfolio technique de Loïc Xu, Data & AI Engineer. Diplômé ENSIIE & Master 2 Data Science Paris-Saclay.">
     <meta name="twitter:image" content="https://loic-xu.github.io/assets/images/og-preview.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -75,169 +77,188 @@
     <main class="max-w-3xl mx-auto px-6 py-12 flex-grow space-y-12">
 
         <!-- Intro -->
-        <section class="space-y-4">
-            <div class="space-y-1">
-                <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Loïc Xu</h1>
-                <p class="text-base text-slate-400 font-mono">Data & AI Engineer</p>
-            </div>
-
-            <p class="text-slate-300 leading-relaxed">
-                Ingénieur diplômé de l'<strong>ENSIIE</strong> (spécialisation Data / IA) et titulaire d'un
-                <strong>Master 2 Data Science à l'Université Paris-Saclay</strong>, je résous deux défis majeurs :
-                optimiser et fiabiliser des pipelines de données massives, et concevoir des applications d'IA (RAG,
-                architectures LLM) robustes, évaluées et prêtes pour la production.
-            </p>
-
-            <p class="text-slate-300 leading-relaxed">
-                Mon parcours s'est forgé à travers des environnements variés : en <strong>start-up</strong> (Prorizon
-                AI), dans le <strong>secteur public</strong> (ANSSI) et au sein d'un <strong>grand groupe
-                    international</strong> (Sanofi). Cette diversité d'expériences m'a appris à allier agilité, rigueur
-                méthodologique et passage à l'échelle industrielle.
-            </p>
-        </section>
-
-        <!-- Dernières Expériences -->
-        <section class="space-y-4 pt-6 border-t border-slate-800/80">
-            <div class="flex items-center justify-between">
-                <h2 class="text-lg font-semibold text-white">Expériences professionnelles</h2>
-                <a href="cv.html" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
-                    Consulter le CV complet →
-                </a>
-            </div>
-
-            <div class="space-y-3">
-                <div
-                    class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                    <div>
-                        <div class="font-semibold text-white text-sm">Stage — Data & AI Engineer • Sanofi</div>
-                        <p class="text-xs text-slate-400 mt-0.5">Pipeline d'ingestion & génération de données
-                            structurées (GEO, JSON-LD Schema sur 30+ sites), Quality Gate hybride (déterministe + LLM),
-                            observabilité Datadog/AWS S3.</p>
-                    </div>
-                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Fév. 2026 –
-                        Juil. 2026</span>
-                </div>
-
-                <div
-                    class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                    <div>
-                        <div class="font-semibold text-white text-sm">Stage — AI Engineer • ANSSI</div>
-                        <p class="text-xs text-slate-400 mt-0.5">Étude, prototypage technique et benchmarks de
-                            performance autour de technologies d'IA.</p>
-                    </div>
-                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Avr. 2025 –
-                        Sept. 2025</span>
-                </div>
-
-                <div
-                    class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                    <div>
-                        <div class="font-semibold text-white text-sm">Stage — Data & ML Engineer • Prorizon AI</div>
-                        <p class="text-xs text-slate-400 mt-0.5">Modernisation de pipelines data (20M+ lignes) via
-                            Polars et SQL (temps /6), standards CI/CD et Clean Code.</p>
-                    </div>
-                    <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Avr. 2024 –
-                        Sept. 2024</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projets Clés -->
-        <section class="space-y-4 pt-6 border-t border-slate-800/80">
-            <div class="flex items-center justify-between">
-                <h2 class="text-lg font-semibold text-white">Projets phares</h2>
-                <a href="projets.html" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
-                    Voir les projets →
-                </a>
-            </div>
-
-            <div class="space-y-4">
-                <!-- RailTrack -->
-                <a href="projets.html#railtrack"
-                    class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
-                    <div class="flex items-baseline justify-between gap-2">
-                        <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
-                            RailTrack — Transit Lakehouse & Analytics
-                        </h3>
-                        <span class="text-xs font-mono text-slate-400 shrink-0">Data Engineering</span>
-                    </div>
-                    <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
-                        Architecture médaillon (Bronze/Silver/Gold) ingérant les flux temps réel d'IDFM via traitement
-                        vectorisé (DuckDB, Polars, Parquet ZSTD) et Data Contracts (Pydantic).
-                    </p>
-                    <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
-                        <span>DuckDB</span> • <span>Polars</span> • <span>dbt</span> • <span>Airflow</span> •
-                        <span>Docker</span>
-                    </div>
-                </a>
-
-                <!-- Assistant RAG -->
-                <a href="projets.html#rag"
-                    class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
-                    <div class="flex items-baseline justify-between gap-2">
-                        <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
-                            Assistant Intelligent de Recherche Documentaire
-                        </h3>
-                        <span class="text-xs font-mono text-slate-400 shrink-0">GenAI & RAG</span>
-                    </div>
-                    <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
-                        Pipeline RAG de production avec indexation vectorielle Weaviate, recherche hybride (BM25 +
-                        Dense), réordonnancement (HyDE, Reranking) et évaluation via Ragas.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
-                        <span>Python</span> • <span>LangChain</span> • <span>Weaviate</span> • <span>Ragas</span>
-                    </div>
-                </a>
-
-                <!-- BabyStats -->
-                <a href="projets.html#babystats"
-                    class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
-                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
-                        <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
-                            BabyStats — Suivi & Analytics de Tournois
-                        </h3>
-                        <div class="flex items-center gap-2 shrink-0 text-xs font-mono">
-                            <span class="text-slate-400">Data Engineering & Web</span>
-                            <span class="text-slate-600">•</span>
-                            <span class="text-emerald-400 flex items-center gap-1 font-medium">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                                <span>En ligne ↗</span>
-                            </span>
+                <section class="space-y-6">
+                    <div class="flex items-center gap-5 sm:gap-6">
+                        <img src="assets/images/avatar.jpeg" alt="Loïc Xu"
+                            class="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-slate-700/80 shadow-lg object-cover shrink-0">
+                        <div class="space-y-1">
+                            <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Loïc Xu</h1>
+                            <p class="text-base text-slate-400 font-mono">Data & AI Engineer</p>
                         </div>
                     </div>
-                    <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
-                        Plateforme Jamstack d'analytics des tournois officiels FFBF : architecture médaillon, empreinte
-                        web réduite de 2,7 Go à &lt; 250 Mo et moteur de Face-à-Face en direct.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
-                        <span>Architecture Médaillon</span> • <span>Jamstack</span> • <span>Playwright</span> •
-                        <span>babystats.pages.dev</span>
-                    </div>
-                </a>
-            </div>
-        </section>
 
-        <!-- Contact & Réseaux -->
-        <section class="space-y-3 pt-6 border-t border-slate-800/80">
-            <h2 class="text-lg font-semibold text-white">Contact & Réseaux</h2>
-            <p class="text-sm text-slate-400 leading-relaxed">
-                Disponible pour échanger autour d'opportunités à Paris en Data Engineering et Intelligence Artificielle
-                :
-            </p>
-            <div class="flex items-center gap-4 pt-1 text-sm font-medium">
-                <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer"
-                    class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
-                    <span>LinkedIn (loic-xu)</span>
-                    <span class="text-xs">↗</span>
-                </a>
-                <span class="text-slate-700">•</span>
-                <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer"
-                    class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
-                    <span>GitHub (@loic-xu)</span>
-                    <span class="text-xs">↗</span>
-                </a>
-            </div>
-        </section>
+                    <p class="text-slate-300 leading-relaxed">
+                        Ingénieur diplômé de l'<strong>ENSIIE</strong> (spécialisation Data / IA) et titulaire d'un
+                        <strong>Master 2 Data Science à l'Université Paris-Saclay</strong>, je résous deux défis majeurs
+                        :
+                        optimiser et fiabiliser des pipelines de données massives, et concevoir des applications d'IA
+                        (RAG,
+                        architectures LLM) robustes, évaluées et prêtes pour la production.
+                    </p>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        Mon parcours s'est forgé à travers des environnements variés : en <strong>start-up</strong>
+                        (Prorizon
+                        AI), dans le <strong>secteur public</strong> (ANSSI) et au sein d'un <strong>grand groupe
+                            international</strong> (Sanofi). Cette diversité d'expériences m'a appris à allier agilité,
+                        rigueur
+                        méthodologique et passage à l'échelle industrielle.
+                    </p>
+                </section>
+
+                <!-- Dernières Expériences -->
+                <section class="space-y-4 pt-6 border-t border-slate-800/80">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-lg font-semibold text-white">Expériences professionnelles</h2>
+                        <a href="cv.html" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
+                            Consulter le CV complet →
+                        </a>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div
+                            class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold text-white text-sm">Stage — Data & AI Engineer • Sanofi</div>
+                                <p class="text-xs text-slate-400 mt-0.5">Pipeline d'ingestion & génération de données
+                                    structurées (GEO, JSON-LD Schema sur 30+ sites), Quality Gate hybride (déterministe
+                                    + LLM),
+                                    observabilité Datadog/AWS S3.</p>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Fév.
+                                2026 –
+                                Juil. 2026</span>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold text-white text-sm">Stage — AI Engineer • ANSSI</div>
+                                <p class="text-xs text-slate-400 mt-0.5">Étude, prototypage technique et benchmarks de
+                                    performance autour de technologies d'IA.</p>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Avr.
+                                2025 –
+                                Sept. 2025</span>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-xl border border-slate-800 bg-slate-900/40 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold text-white text-sm">Stage — Data & ML Engineer • Prorizon AI
+                                </div>
+                                <p class="text-xs text-slate-400 mt-0.5">Modernisation de pipelines data (20M+ lignes)
+                                    via
+                                    Polars et SQL (temps /6), standards CI/CD et Clean Code.</p>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400 shrink-0 whitespace-nowrap sm:pt-0.5">Avr.
+                                2024 –
+                                Sept. 2024</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projets Clés -->
+                <section class="space-y-4 pt-6 border-t border-slate-800/80">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-lg font-semibold text-white">Projets phares</h2>
+                        <a href="projets.html" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">
+                            Voir les projets →
+                        </a>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- RailTrack -->
+                        <a href="projets.html#railtrack"
+                            class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
+                            <div class="flex items-baseline justify-between gap-2">
+                                <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                                    RailTrack — Transit Lakehouse & Analytics
+                                </h3>
+                                <span class="text-xs font-mono text-slate-400 shrink-0">Data Engineering</span>
+                            </div>
+                            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+                                Architecture médaillon (Bronze/Silver/Gold) ingérant les flux temps réel d'IDFM via
+                                traitement
+                                vectorisé (DuckDB, Polars, Parquet ZSTD) et Data Contracts (Pydantic).
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
+                                <span>DuckDB</span> • <span>Polars</span> • <span>dbt</span> • <span>Airflow</span> •
+                                <span>Docker</span>
+                            </div>
+                        </a>
+
+                        <!-- Assistant RAG -->
+                        <a href="projets.html#rag"
+                            class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
+                            <div class="flex items-baseline justify-between gap-2">
+                                <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                                    Assistant Intelligent de Recherche Documentaire
+                                </h3>
+                                <span class="text-xs font-mono text-slate-400 shrink-0">GenAI & RAG</span>
+                            </div>
+                            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+                                Pipeline RAG de production avec indexation vectorielle Weaviate, recherche hybride (BM25
+                                +
+                                Dense), réordonnancement (HyDE, Reranking) et évaluation via Ragas.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
+                                <span>Python</span> • <span>LangChain</span> • <span>Weaviate</span> •
+                                <span>Ragas</span>
+                            </div>
+                        </a>
+
+                        <!-- BabyStats -->
+                        <a href="projets.html#babystats"
+                            class="block p-5 rounded-xl border border-slate-800 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-700 transition-all group">
+                            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2">
+                                <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                                    BabyStats — Suivi & Analytics de Tournois
+                                </h3>
+                                <div class="flex items-center gap-2 shrink-0 text-xs font-mono">
+                                    <span class="text-slate-400">Data Engineering & Web</span>
+                                    <span class="text-slate-600">•</span>
+                                    <span class="text-emerald-400 flex items-center gap-1 font-medium">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                        <span>En ligne ↗</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+                                Plateforme Jamstack d'analytics des tournois officiels FFBF : architecture médaillon,
+                                empreinte
+                                web réduite de 2,7 Go à &lt; 250 Mo et moteur de Face-à-Face en direct.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3 text-xs font-mono text-slate-400">
+                                <span>Architecture Médaillon</span> • <span>Jamstack</span> • <span>Playwright</span> •
+                                <span>babystats.pages.dev</span>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Contact & Réseaux -->
+                <section class="space-y-3 pt-6 border-t border-slate-800/80">
+                    <h2 class="text-lg font-semibold text-white">Contact & Réseaux</h2>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Disponible pour échanger autour d'opportunités à Paris en Data Engineering et Intelligence
+                        Artificielle
+                        :
+                    </p>
+                    <div class="flex items-center gap-4 pt-1 text-sm font-medium">
+                        <a href="https://www.linkedin.com/in/loic-xu/" target="_blank" rel="noopener noreferrer"
+                            class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+                            <span>LinkedIn (loic-xu)</span>
+                            <span class="text-xs">↗</span>
+                        </a>
+                        <span class="text-slate-700">•</span>
+                        <a href="https://github.com/loic-xu" target="_blank" rel="noopener noreferrer"
+                            class="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+                            <span>GitHub (@loic-xu)</span>
+                            <span class="text-xs">↗</span>
+                        </a>
+                    </div>
+                </section>
 
     </main>
 
