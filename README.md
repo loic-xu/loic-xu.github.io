@@ -1,4 +1,4 @@
-# 🌐 Loïc Xu — Portfolio & Site Personnel
+# 🌐 Loïc Xu — Portfolio Technique
 
 [![Website](https://img.shields.io/badge/Website-loic--xu.github.io-0969da?style=flat&logo=githubpages&logoColor=white)](https://loic-xu.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-loic--xu-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/loic-xu/)
